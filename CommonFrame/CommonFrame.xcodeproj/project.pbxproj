@@ -15,6 +15,7 @@
 		4C3343B31DB6287D006E3EA5 /* CommonFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3343B21DB6287D006E3EA5 /* CommonFrameUITests.m */; };
 		4C3343C21DB62AFC006E3EA5 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3343C11DB62AFC006E3EA5 /* RootViewController.m */; };
 		4C3343C51DB62D97006E3EA5 /* KeyboardFitScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3343C41DB62D97006E3EA5 /* KeyboardFitScrollView.m */; };
+		4C3343C81DB63042006E3EA5 /* CustomHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3343C71DB63042006E3EA5 /* CustomHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		4C3343C11DB62AFC006E3EA5 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4C3343C31DB62D97006E3EA5 /* KeyboardFitScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardFitScrollView.h; sourceTree = "<group>"; };
 		4C3343C41DB62D97006E3EA5 /* KeyboardFitScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardFitScrollView.m; sourceTree = "<group>"; };
+		4C3343C61DB63042006E3EA5 /* CustomHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHUD.h; sourceTree = "<group>"; };
+		4C3343C71DB63042006E3EA5 /* CustomHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				4C3343C11DB62AFC006E3EA5 /* RootViewController.m */,
 				4C3343C31DB62D97006E3EA5 /* KeyboardFitScrollView.h */,
 				4C3343C41DB62D97006E3EA5 /* KeyboardFitScrollView.m */,
+				4C3343C61DB63042006E3EA5 /* CustomHUD.h */,
+				4C3343C71DB63042006E3EA5 /* CustomHUD.m */,
 				4C3343991DB6287C006E3EA5 /* Assets.xcassets */,
 				4C33439B1DB6287D006E3EA5 /* LaunchScreen.storyboard */,
 				4C33439E1DB6287D006E3EA5 /* Info.plist */,
@@ -280,6 +285,7 @@
 				4C3343C51DB62D97006E3EA5 /* KeyboardFitScrollView.m in Sources */,
 				4C3343981DB6287C006E3EA5 /* AppDelegate.m in Sources */,
 				4C3343951DB6287C006E3EA5 /* main.m in Sources */,
+				4C3343C81DB63042006E3EA5 /* CustomHUD.m in Sources */,
 				4C3343C21DB62AFC006E3EA5 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
