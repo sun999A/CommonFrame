@@ -9,8 +9,11 @@
 #import "RootViewController.h"
 #import "KeyboardFitScrollView.h"
 #import "CustomHUD.h"
-@interface RootViewController ()
-
+#import "AreaPickerView.h"
+@interface RootViewController ()<AreaPickerDelegate>
+{
+    AreaPickerView *areaPicker;
+}
 @end
 
 @implementation RootViewController
@@ -52,6 +55,9 @@
     button.frame = CGRectMake(0, 0, 60, 60);
     button.center = self.view.center;
     [self.view addSubview:button];
+    
+    areaPicker = [[AreaPickerView alloc] initWithDelegate:self title:@"城市选择器"];
+    [areaPicker pickerViewSelectRow:0 inComponent:0];
     // Do any additional setup after loading the view.
 }
 
@@ -64,9 +70,20 @@
     
     //[CustomHUD showSuccessWithStatus:@"提示"];
     
-    [CustomHUD showErrorWithStatus:@"提示"];
-    [CustomHUD dismissAfterTime:2.0];
+//    [CustomHUD showErrorWithStatus:@"提示"];
+//    [CustomHUD dismissAfterTime:2.0];
+    
+    
+    //[areaPicker pickerViewSelectAtAreaCode:@12188];
+    [areaPicker showInView:self.view];
+
 }
+
+- (void)pickerViewSelectAreaOfCode:(NSNumber *)code{
+    NSLog(@"------%@ %@ %@", areaPicker.locate.province, areaPicker.locate.city, areaPicker.locate.area);
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
