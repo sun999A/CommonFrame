@@ -10,7 +10,8 @@
 #import "KeyboardFitScrollView.h"
 #import "CustomHUD.h"
 #import "AreaPickerView.h"
-@interface RootViewController ()<AreaPickerDelegate>
+#import "UUPickerView.h"
+@interface RootViewController ()<AreaPickerDelegate, UUPickerViewDelegate>
 {
     AreaPickerView *areaPicker;
 }
@@ -75,10 +76,19 @@
     
     
     //[areaPicker pickerViewSelectAtAreaCode:@12188];
-    [areaPicker showInView:self.view];
+    
+    //[areaPicker showInView:self.view];
+    
+    
+    UUPickerView *pickerView = [[UUPickerView alloc] initPickerViewWithArray:@[@[@"a",@"b",@"c"], @[@"d", @"e", @"f"]] title:@"aa"];
+    pickerView.delegate = self;
+    [pickerView show];
 
 }
 
+- (void)pickerViewClick:(UUPickerView *)pickerView rowArray:(NSArray *)rowArray{
+    NSLog(@"------%@ %@", rowArray[0] , rowArray[1]);
+}
 - (void)pickerViewSelectAreaOfCode:(NSNumber *)code{
     NSLog(@"------%@ %@ %@", areaPicker.locate.province, areaPicker.locate.city, areaPicker.locate.area);
     

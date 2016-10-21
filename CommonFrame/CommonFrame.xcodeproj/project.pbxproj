@@ -18,6 +18,7 @@
 		4C3343C81DB63042006E3EA5 /* CustomHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C3343C71DB63042006E3EA5 /* CustomHUD.m */; };
 		4CA3C8091DB9C5F5009D637B /* AreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3C8081DB9C5F5009D637B /* AreaPickerView.m */; };
 		4CA3C80B1DB9C8E0009D637B /* areaCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CA3C80A1DB9C8E0009D637B /* areaCode.plist */; };
+		4CA3C8141DBA1971009D637B /* UUPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA3C8131DBA1971009D637B /* UUPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		4CA3C8071DB9C5F5009D637B /* AreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaPickerView.h; sourceTree = "<group>"; };
 		4CA3C8081DB9C5F5009D637B /* AreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaPickerView.m; sourceTree = "<group>"; };
 		4CA3C80A1DB9C8E0009D637B /* areaCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = areaCode.plist; sourceTree = "<group>"; };
+		4CA3C8121DBA1971009D637B /* UUPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUPickerView.h; sourceTree = "<group>"; };
+		4CA3C8131DBA1971009D637B /* UUPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				4C3343C71DB63042006E3EA5 /* CustomHUD.m */,
 				4CA3C8071DB9C5F5009D637B /* AreaPickerView.h */,
 				4CA3C8081DB9C5F5009D637B /* AreaPickerView.m */,
+				4CA3C8121DBA1971009D637B /* UUPickerView.h */,
+				4CA3C8131DBA1971009D637B /* UUPickerView.m */,
 				4CA3C80A1DB9C8E0009D637B /* areaCode.plist */,
 				4C3343991DB6287C006E3EA5 /* Assets.xcassets */,
 				4C33439B1DB6287D006E3EA5 /* LaunchScreen.storyboard */,
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA3C8141DBA1971009D637B /* UUPickerView.m in Sources */,
 				4C3343C51DB62D97006E3EA5 /* KeyboardFitScrollView.m in Sources */,
 				4C3343981DB6287C006E3EA5 /* AppDelegate.m in Sources */,
 				4C3343951DB6287C006E3EA5 /* main.m in Sources */,
